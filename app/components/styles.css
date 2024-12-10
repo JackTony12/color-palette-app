@@ -1,0 +1,213 @@
+.header_color {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  height: 300px;
+  gap: 10px;
+  > div {
+    box-shadow: 5px 5px 5px rgb(85, 85, 85);
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  & h2 {
+    font-size: 1em;
+    color: rgb(109, 109, 109);
+  }
+}
+.color_input_button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.color_squares_section,
+.middle_child {
+  overflow: hidden;
+  position: relative;
+}
+.copy {
+  &::after {
+    transition: 0.5s ease;
+    top: 4%;
+    right: 1%;
+    padding: 5px 10px;
+    position: absolute;
+    content: "Copied";
+    font-size: 0.7em;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+  }
+}
+.color_squares_section {
+  cursor: pointer;
+  display: flex;
+  padding: 1em;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s ease-in-out;
+  color: #ffffff;
+  & h2 {
+    font-size: 3em;
+    font-weight: 900;
+    /* font-family: "system-ui"; */
+  }
+  /* & p {
+    font-size: 0.8em;
+  } */
+  & h3 {
+    font-size: 2em;
+  }
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+@media (width < 685px) {
+  .header_color {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 200px);
+  }
+}
+.color_text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  & h3 {
+    font-size: 1.3em;
+  }
+}
+/* MIDDLE COMPONENT */
+
+.middle_color,
+.footer_color {
+  color: white;
+  display: grid;
+  margin-top: 1em;
+  gap: 10px;
+  /* & p {
+    font-size: 0.8em;
+  } */
+  > div {
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 5px 5px 5px rgb(85, 85, 85);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+    }
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}
+.middle_color {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  > div {
+    height: 400px;
+  }
+}
+.footer_color {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  > div {
+    height: 250px;
+  }
+}
+.Aa {
+  font-family: system-ui;
+}
+.Bb,
+.Ss {
+  font-family: "Times New Roman", Times, serif;
+}
+.Cc {
+  font-family: "Franklin Gothic Medium";
+}
+
+.Dd {
+  font-family: "Arial";
+}
+
+.Ee,
+.Ll {
+  font-family: "Verdana";
+}
+
+.Ff {
+  font-family: Georgia;
+}
+
+.Gg,
+.Oo {
+  font-family: "Courier New";
+}
+.Hh,
+.Rr {
+  font-family: "Comic Sans MS";
+}
+.Ii,
+.Qq {
+  font-family: "Impact";
+}
+
+.Jj {
+  font-family: "Trebuchet MS";
+}
+.Mm {
+  font-family: tahoma;
+}
+.Nn {
+  font-family: Georgia;
+}
+.Pp {
+  font-family: "Palatino Linotype";
+}
+.Tt {
+  font-family: "Lucida Sans";
+}
+.Gg {
+  font-family: "Gill Sans";
+}
+.Vv {
+  font-family: "Century Gothic";
+}
+.Ww {
+  font-family: "Rockwell";
+}
+.Xx {
+  font-family: cambria;
+}
+.Yy {
+  font-family: "trebuchet ms";
+}
+.Zz {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* saturation=========================== */
+.saturation {
+  display: flex;
+  width: 100%;
+
+  > div {
+    flex-grow: 1;
+    height: 400px;
+    width: 0;
+    transition: all 0.3s ease;
+    &:hover {
+      width: 300px;
+      /* transform: scaleX(1.5); */
+    }
+  }
+}
